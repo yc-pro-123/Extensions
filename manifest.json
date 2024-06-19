@@ -1,0 +1,22 @@
+{
+    "name": "Medium Member-Only Opener",
+    "description": "Detects an Member-only stories, and asks user to get redirected to Read Medium!",
+    "version": "1.0",
+    "author":"y_c_pro",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://medium.com/*",
+        "https://medium.com/*"
+    ],
+    "icons": {
+        "16": "icons/icon.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png"},
+    "background": {
+        "service_worker": "background.js"
+    }
+}
